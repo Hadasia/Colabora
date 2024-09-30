@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Geral */
 * {
     background-color: #F6F4F6;
@@ -278,6 +282,7 @@ h4 {
 footer {
     text-align: center;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 /* Para telas menores (responsividade) */
