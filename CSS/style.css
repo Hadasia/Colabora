@@ -169,7 +169,6 @@ header {
 .descri-solicitacao h1, 
 .descri-solicitacao p {
     margin: 0; /* Remove margens para alinhamento adequado */
-    margin-bottom: 50px; /* Adiciona espaço abaixo do título e do parágrafo */
     padding: 0; /* Remove padding desnecessário */
 }
 
