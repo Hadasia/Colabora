@@ -46,7 +46,7 @@
             <p>
               A Conecta ONG é uma empresa especializada em desenvolver soluções
               tecnológicas para ONGs sem fins lucrativos. Nosso sistema é
-              projetado para simplificar a gestão de recursos, v luntários e
+              projetado para simplificar a gestão de recursos, voluntários e
               campanhas, permitindo que as organizações se concentrem em suas
               causas. Com foco na eficiência e transparência, oferecemos uma
               plataforma intuitiva que facilita a captação de doações, o
@@ -123,24 +123,45 @@
 
       <!-- Sessão Contato -->
       <section class="container-form" id="solicitarcontato">
-        <h1>Solicitar contato</h1>
-        <form action="#" method="post">
-          <label for="nome">Nome:</label><br />
-          <input type="text" id="nome" name="nome" required /><br /><br />
+        <div class="descri-solicitacao">
+          <h1>Solicitar contato</h1>
+          <p>
+            Na Conecta ONG, estamos comprometidos em oferecer suporte
+            personalizado para todas as organizações que desejam potencializar
+            seu impacto social. Através deste formulário, você pode entrar em
+            contato com nossa equipe para saber mais sobre como nossas soluções
+            tecnológicas podem transformar a gestão da sua ONG. Seja para
+            otimizar a captação de recursos, engajar voluntários ou monitorar
+            suas campanhas, estamos aqui para ajudar. Preencha os campos abaixo
+            e retornaremos o mais breve possível para discutirmos como podemos
+            colaborar em sua jornada para um futuro melhor.
+          </p>
+        </div>
+        <div class="formulario">
+          <form>
+            <label for="nome">Nome:</label><br />
+            <input type="text" id="nome" name="nome" required /><br /><br />
 
-          <label for="email">E-mail:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
+            <label for="email">E-mail:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
 
-          <label for="telefone">Telefone:</label><br />
-          <input type="tel" id="telefone" name="telefone" /><br /><br />
+            <label for="telefone">Telefone:</label><br />
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              required
+            /><br /><br />
 
-          <label for="motivo">Motivo do Contato:</label><br />
-          <textarea id="motivo" name="motivo" required></textarea><br /><br />
+            <label for="motivo">Motivo do Contato:</label><br />
+            <textarea id="motivo" name="motivo"></textarea><br /><br />
 
-          <div class="form-submit-container">
-            <input type="submit" value="Enviar" />
-        </div>        
-        </form>
+            <div class="form-submit-container">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+        <div id="message" class="message"></div>
       </section>
 
       <!-- Sessão Desenvolvedoras -->
@@ -156,22 +177,22 @@
               etc...
             </p>
           </div>
-  
+
           <div class="desenvolvedora">
             <h3>Maria Eduarda</h3>
             <h4>Desenvolvimento e DBA</h4>
             <p>Responsável pelo Banco de Dados e cuidados com a aplicação.</p>
           </div>
-  
+
           <div class="desenvolvedora">
             <h3>Julia Gabrielle</h3>
-            <h4>Desenvolvimento e UA</h4>
+            <h4>Desenvolvimento e UX</h4>
             <p>
               Responsável por separar e organizar o projeto, garantindo o
               agrupamento eficiente do site.
             </p>
           </div>
-  
+
           <div class="desenvolvedora">
             <h3>Kamila Silva</h3>
             <h4>Desenvolvimento e Prototipagem</h4>
@@ -180,13 +201,13 @@
               sistema.
             </p>
           </div>
-  
+
           <div class="desenvolvedora">
             <h3>Hadasia Vitória</h3>
             <h4>Analista de Negócio</h4>
             <p>
-              Documenta detalhadamente os requisitos para encontrar oportunidades
-              de melhorias.
+              Documenta detalhadamente os requisitos para encontrar
+              oportunidades de melhorias.
             </p>
           </div>
         </div>
@@ -197,6 +218,7 @@
     <footer>
       <p>&copy; 2024 Conecta ONG.</p>
     </footer>
-    <script src="JavaScript/app.js"></script>
+
+    <script src="Script.js"></script>
   </body>
 </html>
