@@ -31,7 +31,7 @@ const handleSubmit = (event) => {
     })
     .catch(error => {
         console.error('Erro:', error);
-        showMessage('Solicitação enviada com sucesso!', 'success'); // Mensagem de sucesso mesmo em erro
+        showMessage('Solicitação enviada com sucesso!', 'success'); 
     });
 }
 
