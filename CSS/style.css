@@ -4,7 +4,7 @@ html {
 
 body {
     padding: 0 2rem; /* Espaçamento lateral na página */
-    background-color: #F6F4F6; /* Cor de fundo da página */
+    background-color: #F2F2F2; /* Cor de fundo da página */
     color: #8D493A; /* Cor do texto padrão */
     font-family: "Source Sans 3", sans-serif;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 main h1 {
-    font-family: "Dancing Script", cursive;
+    font-family: Playfair Display;
     font-size: 46px;
     text-align: center; /* Alinha o título ao centro */
     margin: 20px 0; /* Espaçamento uniforme */
@@ -102,7 +102,7 @@ header {
 
 /* Estilo dos Cards */
 .card, .card-gestao {
-    background-color: rgba(228, 208, 208, 0.31);
+    background-color: #BF7069;
     border: 1px solid #E0E0E0;
     border-radius: 10px;
     width: 280px; 
@@ -116,7 +116,8 @@ header {
     margin: 10px 0; /* Uniformiza o espaçamento */
     text-align: center;
     padding: 10px;
-    background-color: rgba(228, 208, 208, 0.05);
+    color: #F2F2F2;
+    background-color: #BF7069;
 }
 
 /* Itens das Listas */
@@ -131,6 +132,7 @@ header {
     margin-left: 10px;
     margin-bottom: 8px;
     font-size: 14px; 
+    color: #F2F2F2;
 }
 
 /* Efeito de Hover */
@@ -194,10 +196,10 @@ form input[type="number"],
 form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #BF7069;
     border-radius: 5px;
-    background-color: #F6F4F6;
-    color: #8D493A;
+    background-color: #F2F2F2;
+    color: #F2F2F2;
 }
 
 form textarea {
@@ -208,7 +210,7 @@ form textarea {
 form input[type="submit"] {
     align-items: right;
     text-align: center;
-    background-color: #8D493A;
+    background-color: #BF7069;
     color: #F6F4F6;
     border: none;
     border-radius: 5px;
@@ -220,7 +222,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #A65A42;
+    background-color: #884e49;
 }
 
 /* Mensagens de sucesso e erro */
@@ -238,8 +240,8 @@ form input[type="submit"]:hover {
 }
 
 .message, .success {
-    background-color: #8D493A; 
-    color: rgb(255, 235, 235); 
+    background-color: #BF7069; 
+    color: #F2F2F2; 
 }
 
 /* Sessão Desenvolvedoras */
@@ -255,12 +257,17 @@ form input[type="submit"]:hover {
     padding: 50px;
     gap: 15px; 
     width: 100%; 
+    color: #F2F2F2;
+}
+
+.cards-desenvolvedoras .desenvolvedora h3 {
+    background-color: #BF7069;
 }
 
 /* Estilos dos cards das desenvolvedoras */
 .cards-desenvolvedoras .desenvolvedora {
-    background-color: rgba(228, 208, 208, 0.31);
-    border: 1px solid #E0E0E0;
+    background-color: #BF7069;
+    border: 1px solid #BF7069;
     border-radius: 10px;
     width: 290px; 
     height: auto; 
