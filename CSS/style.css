@@ -199,7 +199,7 @@ form textarea {
     border: 1px solid #BF7069;
     border-radius: 5px;
     background-color: #F2F2F2;
-    color: #F2F2F2;
+    color: #BF7069;
 }
 
 form textarea {
@@ -211,7 +211,7 @@ form input[type="submit"] {
     align-items: right;
     text-align: center;
     background-color: #BF7069;
-    color: #F6F4F6;
+    color: #F2F2F2;
     border: none;
     border-radius: 5px;
     padding: 10px;
