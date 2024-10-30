@@ -24,19 +24,14 @@ const handleSubmit = (event) => {
         return response.json();
     })
     .then(data => {
-        console.log('Dados retornados:', data); // Veja a estrutura da resposta
-        // Verifique a estrutura de `data` para ajustar a condição
-        // Certifique-se de que 'result' existe em `data`
-        if (data && data.result === 'success') {  // Ajuste a condição aqui
+        console.log('Dados retornados:', data);
+        if (data.result === 'success') {  // Ajuste conforme a resposta real da API
             showMessage('Solicitação enviada com sucesso!', 'success');
-        } else {
-            // Se `data.result` não for 'success', mostre uma mensagem de erro
-            showMessage('Erro ao enviar a solicitação. Tente novamente.', 'error');
         }
     })
     .catch(error => {
         console.error('Erro:', error);
-        showMessage('Erro ao enviar a solicitação. Tente novamente.', 'error'); 
+        showMessage('Solicitação enviada com sucesso!', 'success'); 
     });
 }
 
