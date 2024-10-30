@@ -6,7 +6,7 @@
 
 ## Link da Landing Page
 
-Você pode visualizar a landing page: [Colabora+](https://kamila-silvva.github.io/Conecta_ONG/)
+Você pode visualizar a landing page: [Colabora+](https://kamila-silvva.github.io/Colabora/)
 
 ## Tecnologias Utilizadas
 
