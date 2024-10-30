@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  /* padding: 0 2rem; Espaçamento lateral na página */
   background-color: #f2f2f2; /* Cor de fundo da página */
   color: #8d493a; /* Cor do texto padrão */
   font-family: "Source Sans 3", sans-serif;
@@ -63,7 +62,6 @@ header {
 
 .nav-container li {
   display: inline-block;
-  margin: 0 10px;
 }
 
 .nav-container a {
@@ -82,7 +80,7 @@ header {
 .container-sobrenos {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between; /* Alterado para space-between */
   padding: 20px;
 }
 
@@ -108,9 +106,10 @@ header {
 
 .cards-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Alterado para space-between */
   padding: 20px;
   gap: 20px;
+  flex-wrap: wrap; /* Adicionado para permitir quebra em telas pequenas */
 }
 
 .card,
@@ -247,11 +246,12 @@ form input[type="submit"]:hover {
 
 .cards-desenvolvedoras {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Alterado para space-between */
   padding: 50px;
   gap: 15px;
   width: 100%;
   color: #f2f2f2;
+  flex-wrap: wrap; /* Adicionado para permitir quebra em telas pequenas */
 }
 
 .cards-desenvolvedoras .desenvolvedora {
@@ -289,6 +289,32 @@ footer {
   margin: 20px 0;
 }
 
+/* Botão de voltar ao topo */
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #bf7069; /* Cor de fundo do botão */
+  color: #f2f2f2; /* Cor da seta */
+  border: none;
+  border-radius: 50%; /* Faz o botão ser uma bolinha */
+  width: 50px; /* Largura da bolinha */
+  height: 50px; /* Altura da bolinha */
+  display: flex; /* Usado para centralizar o conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  font-size: 20px; /* Tamanho da seta */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+}
+
+#backToTop:hover {
+  background-color: #884e49; /* Cor ao passar o mouse */
+}
+
 /* Responsividade para telas menores que 768px */
 @media (max-width: 768px) {
   .menu-icon {
@@ -313,12 +339,6 @@ footer {
   .nav-container ul li {
     margin: 10px 0;
     text-align: center;
-  }
-
-  .nav-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
   }
 
   .container-sobrenos,
@@ -354,57 +374,18 @@ footer {
     padding: 0 20px;
   }
 
-  .descri-solicitacao {
-    margin-bottom: 10px;
-    font-size: 1rem;
-  }
-
   .formulario {
-    max-width: 100%;
+    width: 100%;
+    max-width: none; /* Remove a largura máxima */
   }
 
-  form input[type="submit"] {
-    width: 100%;
+  #backToTop {
+    display: flex; /* Mostra o botão */
+  }
+
+  #backToTop:hover {
+    background-color: #884e49; /* Cor ao passar o mouse */
   }
 }
 
-/* Responsividade para telas menores que 425px */
-@media (max-width: 425px) {
-  header {
-    padding: 0 1rem;
-  }
 
-  .container-sobrenos,
-  .cards-container {
-    padding: 0.5rem;
-  }
-
-  .ilustracao-one img {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .card,
-  .card-gestao,
-  .cards-desenvolvedoras .desenvolvedora {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .container-form {
-    padding: 0 1rem;
-  }
-
-  .descri-solicitacao {
-    font-size: 0.9rem;
-    margin-bottom: 8px;
-  }
-
-  .formulario {
-    width: 100%;
-  }
-
-  form input[type="submit"] {
-    font-size: 0.9rem;
-  }
-}

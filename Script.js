@@ -1,3 +1,39 @@
+// Função para alternar o menu
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-container ul');
+    navLinks.classList.toggle('open');
+}
+
+// Função para fechar o menu
+function closeMenu() {
+    const navLinks = document.querySelector('.nav-container ul');
+    navLinks.classList.remove('open');
+}
+
+// Adiciona evento de clique em cada link do menu
+const navItems = document.querySelectorAll('.nav-container ul li a');
+navItems.forEach(item => {
+    item.addEventListener('click', closeMenu);
+});
+
+// Botão Voltar ao Topo
+const backToTopButton = document.getElementById('backToTop');
+
+// Mostrar ou ocultar o botão baseado na rolagem da página
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = 'flex'; // Mostra o botão
+    } else {
+        backToTopButton.style.display = 'none'; // Oculta o botão
+    }
+};
+
+// Rolagem suave para o topo ao clicar no botão
+backToTopButton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+
 const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -49,12 +85,6 @@ const showMessage = (text, type) => {
         messageElement.style.opacity = 0
     }, 3000)
 }
-
-// Função para alternar o menu
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-container ul');
-    navLinks.classList.toggle('open');
-  }
   
 
 document.querySelector('form').addEventListener('submit', handleSubmit)
